@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Inicio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Somos</a>
-        <a href="#">Agregar</a>
-        <a href="#" class="activo">Alta</a>
-        <a href="#">Visítanos</a>
-    </nav>
+<nav class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="conocenos.html">Conócenos</a>
+    <a href="productos.html">Productos</a>
+    <a href="registro.html">Registro</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
 
-    <div class="contenedor">
+<div class="contenedor">
 
-        <div class="formulario">
+    <div class="formulario">
 
-            <h2>Regístrate en este sitio</h2>
+        <div class="campos">
 
-            <label>Nombre de usuario</label>
-            <input type="text">
+            <div class="fila">
+                <label>Web:</label>
+                <input type="text" placeholder="https://www.google.com">
+            </div>
 
-            <label>Correo electrónico</label>
-            <input type="email">
+            <div class="fila">
+                <label>Nombre:</label>
+                <input type="text">
+            </div>
 
-            <p>
-                Se te enviará una confirmación del registro
-                por correo electrónico.
-            </p>
-
-            <button>Registrarse</button>
+            <div class="fila">
+                <label>Apellido:</label>
+                <input type="text">
+            </div>
 
         </div>
 
+        <button class="boton">Buscar</button>
+
     </div>
 
+</div>
+
 </body>
-</html
+</html>

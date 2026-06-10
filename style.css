@@ -1,87 +1,100 @@
-body{
+*{
     margin:0;
     padding:0;
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:white;
 }
 
 /* MENÚ */
 
-nav{
+.menu{
+    width:90%;
+    margin:20px auto;
     display:flex;
-    justify-content:center;
-    margin-top:20px;
 }
 
-nav a{
+.menu a{
+    flex:1;
     text-decoration:none;
-    background:#d89b5d;
-    color:black;
-    padding:15px 40px;
-    border:1px solid #b07c45;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(#8ec5ff,#5ea3ff);
+    border:1px solid #4d78b9;
+    color:#1b3c73;
+    font-size:30px;
 }
 
-nav a:hover{
-    background:#c88b4f;
+.menu a:hover{
+    background:#d8ecff;
 }
 
-.activo{
-    background:#8dbf7c;
-}
-
-/* FORMULARIO */
+/* CONTENEDOR */
 
 .contenedor{
-    display:flex;
-    justify-content:center;
-    margin-top:50px;
+    width:90%;
+    margin:40px auto;
+    padding:60px;
+    background:#dffcff;
+    border:12px solid #315ca7;
+    border-radius:50px;
 }
 
 .formulario{
-    width:400px;
-    background:white;
-    padding:30px;
-    border:1px solid #ddd;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
 }
 
-.formulario h2{
-    border-left:5px solid #36b9cc;
-    padding-left:10px;
-    color:#666;
-    margin-bottom:30px;
+.campos{
+    width:60%;
 }
 
-label{
-    display:block;
-    margin-top:20px;
-    margin-bottom:8px;
-    color:#666;
+.fila{
+    display:flex;
+    align-items:center;
+    margin:30px 0;
 }
 
-input{
+.fila label{
+    width:150px;
+    font-size:30px;
+    font-weight:bold;
+    color:#315ca7;
+}
+
+.fila input{
     width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    box-sizing:border-box;
+    padding:12px;
+    font-size:20px;
 }
 
-p{
-    margin-top:25px;
-    color:#777;
-    font-size:14px;
-}
-
-button{
-    margin-top:20px;
-    float:right;
-    background:#29b6f6;
-    color:white;
+.boton{
+    width:250px;
+    height:180px;
+    background:white;
     border:none;
-    padding:12px 25px;
+    font-size:50px;
+    color:#4d78b9;
     cursor:pointer;
 }
 
-button:hover{
-    background:#039be5;
+.boton:hover{
+    background:#eef7ff;
+}
+
+h1{
+    text-align:center;
+    color:#315ca7;
+    margin-top:30px;
+}
+
+p{
+    text-align:center;
+    font-size:22px;
+    margin-top:20px;
 }
